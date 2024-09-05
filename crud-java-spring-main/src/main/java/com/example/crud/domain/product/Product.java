@@ -19,12 +19,15 @@ public class Product {
     private String name;
 
     private Integer price;
+    
+    private String description;
 
     private Boolean active;
 
     public Product(RequestProduct requestProduct){
         this.name = requestProduct.name();
         this.price = requestProduct.price();
+        this.description = requestProduct.description();
         this.active = true;
     }
 }

@@ -38,6 +38,7 @@ public class ProductController {
             Product product = optionalProduct.get();
             product.setName(data.name());
             product.setPrice(data.price());
+            product.setDescription(data.description());
             return ResponseEntity.ok(product);
         } else {
             throw new EntityNotFoundException();
